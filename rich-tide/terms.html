@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用条款 - FileConverter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #1d1d1f;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .last-updated {
+            color: #86868b;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #1d1d1f;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #0071e3;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #515154;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #515154;
+        }
+        
+        .highlight {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #0071e3;
+        }
+        
+        .price-box {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .price {
+            font-size: 36px;
+            font-weight: bold;
+            color: #1d1d1f;
+        }
+        
+        .price-note {
+            color: #515154;
+            margin-top: 10px;
+        }
+        
+        .language-switcher {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: #f5f5f7;
+            border-radius: 8px;
+        }
+        
+        .language-switcher a {
+            color: #0071e3;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        
+        .language-switcher a:hover {
+            text-decoration: underline;
+        }
+        
+        .content-section {
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        .contact {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1d1d1f;
+                color: #f5f5f7;
+            }
+            
+            .container {
+                background: #2d2d2f;
+            }
+            
+            h1, h2 {
+                color: #f5f5f7;
+            }
+            
+            p, li {
+                color: #a1a1a6;
+            }
+            
+            .language-switcher {
+                background: #3d3d3f;
+            }
+            
+            .price-box {
+                background: #1b5e20;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switcher">
+            <a href="#zh" onclick="showLanguage('zh'); return false;">中文</a> | 
+            <a href="#en" onclick="showLanguage('en'); return false;">English</a> | 
+            <a href="#ja" onclick="showLanguage('ja'); return false;">日本語</a>
+        </div>
+        
+        <!-- 中文版本 -->
+        <div id="zh" class="content-section active">
+            <h1>使用条款</h1>
+            <p class="last-updated">最后更新：2026 年 5 月 20 日</p>
+            
+            <div class="highlight">
+                <strong>重要声明</strong>：FileConverter 是一款一次性买断制 App。购买后，您可以终身使用所有功能，无需订阅。
+            </div>
+            
+            <h2>1. 接受条款</h2>
+            <p>通过下载、安装或使用 FileConverter App（以下简称"本 App"），您同意受本使用条款的约束。如果您不同意本条款，请不要使用本 App。</p>
+            
+            <h2>2. 许可说明</h2>
+            <p>本 App 采用<strong>一次性买断制</strong>。购买后，您获得以下许可：</p>
+            
+            <div class="price-box">
+                <div class="price">$4.99</div>
+                <div class="price-note">一次性买断，终身使用，无订阅</div>
+            </div>
+            
+            <ul>
+                <li>✅ 在您的 iOS 设备上安装和使用本 App</li>
+                <li>✅ 终身免费更新</li>
+                <li>✅ 所有功能无限制使用</li>
+                <li>✅ 无需订阅，无隐藏费用</li>
+            </ul>
+            
+            <p><strong>免费试用</strong>：您有 3 次免费转换机会，无需购买即可体验基础功能。</p>
+            
+            <h2>3. 禁止行为</h2>
+            <p>使用本 App 时，您<strong>不得</strong>：</p>
+            <ul>
+                <li>❌ 对本 App 进行逆向工程、反编译或反汇编</li>
+                <li>❌ 复制、修改、分发本 App 的任何部分</li>
+                <li>❌ 将本 App 用于任何非法目的</li>
+                <li>❌ 绕过本 App 的任何技术保护措施（例如 IAP 购买验证）</li>
+                <li>❌ 使用本 App 处理侵犯第三方版权的文件</li>
+            </ul>
+            
+            <h2>4. 隐私和安全</h2>
+            <p>本 App 采用 100% 本地处理：</p>
+            <ul>
+                <li>✅ 所有文件处理都在您的设备本地完成</li>
+                <li>✅ 不上传任何文件到服务器</li>
+                <li>✅ 不收集您的任何个人数据</li>
+                <li>✅ 详见我们的 <a href="privacy.html">隐私政策</a></li>
+            </ul>
+            
+            <h2>5. 免责声明</h2>
+            <p>本 App 按"原样"提供，不提供任何明示或暗示的保证。我们<strong>不保证</strong>：</p>
+            <ul>
+                <li>❌ 转换结果的准确性或完整性</li>
+                <li>❌ 本 App 不会中断或没有错误</li>
+                <li>❌ 转换后的文件在其他设备上能正常打开</li>
+            </ul>
+            <p>您使用本 App 的风险由您自行承担。</p>
+            
+            <h2>6. 退款政策</h2>
+            <p>根据 Apple 的退款政策，所有购买均通过 Apple 的 App Store 进行。如果您对购买不满意，可以根据 Apple 的退款政策申请退款：</p>
+            <ul>
+                <li>访问 <a href="https://reportaproblem.apple.com/">https://reportaproblem.apple.com/</a></li>
+                <li>登录您的 Apple ID</li>
+                <li>选择 FileConverter 购买记录</li>
+                <li>点击"报告问题"并选择"请求退款"</li>
+            </ul>
+            <p>Apple 将在 48 小时内处理您的退款请求。</p>
+            
+            <h2>7. 知识产权</h2>
+            <p>本 App 及其所有内容（包括但不限于代码、设计、图标、文本）均为 RichTide Studio 的财产，受版权法、商标法和其他知识产权法保护。</p>
+            
+            <h2>8. 条款修改</h2>
+            <p>我们保留随时修改本使用条款的权利。修改后的条款将在本页面上发布，并更新"最后更新"日期。您继续使用本 App 即表示您接受修改后的条款。</p>
+            
+            <h2>9. 适用法律</h2>
+            <p>本使用条款受中华人民共和国法律管辖。任何因本使用条款引起的争议，应提交至有管辖权的人民法院诉讼解决。</p>
+            
+            <h2>10. 联系方式</h2>
+            <div class="contact">
+                <p>如果您对本使用条款有任何疑问，请通过以下方式联系我们：</p>
+                <p><strong>开发者</strong>：RichTide Studio</p>
+                <p><strong>邮箱</strong>：legal@richtide.app</p>
+                <p><strong>网站</strong>：https://richtide.app</p>
+            </div>
+        </div>
+        
+        <!-- 英文版本 -->
+        <div id="en" class="content-section">
+            <h1>Terms of Use</h1>
+            <p class="last-updated">Last updated: May 20, 2026</p>
+            
+            <div class="highlight">
+                <strong>Important Notice</strong>: FileConverter is a one-time purchase App. After purchase, you can use all features for life, no subscription required.
+            </div>
+            
+            <h2>1. Acceptance of Terms</h2>
+            <p>By downloading, installing, or using the FileConverter App (hereinafter referred to as "the App"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the App.</p>
+            
+            <h2>2. License Description</h2>
+            <p>The App uses a <strong>one-time purchase model</strong>. After purchase, you get the following license:</p>
+            
+            <div class="price-box">
+                <div class="price">$4.99</div>
+                <div class="price-note">One-time purchase, lifetime use, no subscription</div>
+            </div>
+            
+            <ul>
+                <li>✅ Install and use the App on your iOS devices</li>
+                <li>✅ Lifetime free updates</li>
+                <li>✅ Unlimited use of all features</li>
+                <li>✅ No subscription, no hidden fees</li>
+            </ul>
+            
+            <p><strong>Free Trial</strong>: You get 3 free conversions before purchase. No purchase required to try basic features.</p>
+            
+            <h2>3. Prohibited Conduct</h2>
+            <p>When using the App, you <strong>must not</strong>:</p>
+            <ul>
+                <li>❌ Reverse engineer, decompile, or disassemble the App</li>
+                <li>❌ Copy, modify, or distribute any part of the App</li>
+                <li>❌ Use the App for any unlawful purpose</li>
+                <li>❌ Bypass any technical protection measures of the App (e.g., IAP purchase verification)</li>
+                <li>❌ Use the App to process files that infringe third-party copyrights</li>
+            </ul>
+            
+            <h2>4. Privacy and Security</h2>
+            <p>The App uses 100% local processing:</p>
+            <ul>
+                <li>✅ All file processing is completed locally on your device</li>
+                <li>✅ No files are uploaded to any servers</li>
+                <li>✅ No personal data is collected from you</li>
+                <li>✅ See our <a href="privacy.html">Privacy Policy</a> for details</li>
+            </ul>
+            
+            <h2>5. Disclaimer</h2>
+            <p>The App is provided "as is" without any express or implied warranties. We <strong>do not guarantee</strong>:</p>
+            <ul>
+                <li>❌ The accuracy or completeness of conversion results</li>
+                <li>❌ That the App will be uninterrupted or error-free</li>
+                <li>❌ That converted files will open normally on other devices</li>
+            </ul>
+            <p>Your use of the App is at your own risk.</p>
+            
+            <h2>6. Refund Policy</h2>
+            <p>All purchases are made through Apple's App Store according to Apple's refund policy. If you are not satisfied with your purchase, you can request a refund according to Apple's refund policy:</p>
+            <ul>
+                <li>Visit <a href="https://reportaproblem.apple.com/">https://reportaproblem.apple.com/</a></li>
+                <li>Sign in with your Apple ID</li>
+                <li>Select the FileConverter purchase record</li>
+                <li>Click "Report a Problem" and select "Request a Refund"</li>
+            </ul>
+            <p>Apple will process your refund request within 48 hours.</p>
+            
+            <h2>7. Intellectual Property</h2>
+            <p>The App and all its content (including but not limited to code, design, icons, text) are the property of RichTide Studio and are protected by copyright law, trademark law, and other intellectual property laws.</p>
+            
+            <h2>8. Modifications to Terms</h2>
+            <p>We reserve the right to modify these Terms of Use at any time. Modified terms will be posted on this page with an updated "Last updated" date. Your continued use of the App constitutes acceptance of the modified terms.</p>
+            
+            <h2>9. Governing Law</h2>
+            <p>These Terms of Use are governed by the laws of the People's Republic of China. Any dispute arising from these Terms of Use shall be submitted to the people's court with jurisdiction for litigation.</p>
+            
+            <h2>10. Contact Us</h2>
+            <div class="contact">
+                <p>If you have any questions about these Terms of Use, please contact us at:</p>
+                <p><strong>Developer</strong>: RichTide Studio</p>
+                <p><strong>Email</strong>: legal@richtide.app</p>
+                <p><strong>Website</strong>: https://richtide.app</p>
+            </div>
+        </div>
+        
+        <!-- 日文版本 -->
+        <div id="ja" class="content-section">
+            <h1>利用規約</h1>
+            <p class="last-updated">最終更新日：2026 年 5 月 20 日</p>
+            
+            <div class="highlight">
+                <strong>重要なお知らせ</strong>：FileConverter はワンタイム購入制アプリです。購入後、すべての機能を一生使えます。サブスクリプションは不要です。
+            </div>
+            
+            <h2>1. 規約の受入</h2>
+            <p>FileConverter アプリ（以下「本アプリ」）をダウンロード、インストール、または使用することにより、お客様は本利用規約に拘束されることに同意したものとみなされます。本規約に同意いただけない場合は、本アプリを使用しないでください。</p>
+            
+            <h2>2. ライセンス説明</h2>
+            <p>本アプリは<strong>ワンタイム購入モデル</strong>を採用しています。購入後、次のライセンスが得られます：</p>
+            
+            <div class="price-box">
+                <div class="price">$4.99</div>
+                <div class="price-note">ワンタイム購入、一生使用、サブスクリプションなし</div>
+            </div>
+            
+            <ul>
+                <li>✅ iOS デバイスに本アプリをインストールおよび使用</li>
+                <li>✅ 一生無料アップデート</li>
+                <li>✅ すべての機能を無制限に使用</li>
+                <li>✅ サブスクリプションなし、隠れた費用なし</li>
+            </ul>
+            
+            <p><strong>無料試用</strong>：購入前に 3 回の無料変換ができます。基本機能を試用するのに購入は不要です。</p>
+            
+            <h2>3. 禁止行為</h2>
+            <p>本アプリを使用する際、お客様は<strong>次の行為をしてはなりません</strong>：</p>
+            <ul>
+                <li>❌ 本アプリのリバースエンジニアリング、逆コンパイル、または逆アセンブル</li>
+                <li>❌ 本アプリのいかなる部分も複製、修正、または配布</li>
+                <li>❌ 本アプリをいかなる違法な目的で使用</li>
+                <li>❌ 本アプリのいかなる技術的保護措置も回避（例：IAP 購入検証）</li>
+                <li>❌ 第三者の著作権を侵害するファイルを処理するために本アプリを使用</li>
+            </ul>
+            
+            <h2>4. プライバシーとセキュリティ</h2>
+            <p>本アプリは 100% ローカル処理を採用しています：</p>
+            <ul>
+                <li>✅ すべてのファイル処理はお客様のデバイスでローカルに完了</li>
+                <li>✅ いかなるファイルもサーバーにアップロードされません</li>
+                <li>✅ お客様の個人データは一切収集されません</li>
+                <li>✅ 詳細は<a href="privacy.html">プライバシーポリシー</a>をご覧ください</li>
+            </ul>
+            
+            <h2>5. 免責事項</h2>
+            <p>本アプリは「現状有姿」で提供され、いかなる明示的または暗示的な保証も提供されません。次の事項を<strong>保証しません</strong>：</p>
+            <ul>
+                <li>❌ 変換結果の正確性または完全性</li>
+                <li>❌ 本アプリが中断されないまたはエラーがないこと</li>
+                <li>❌ 変換後のファイルが他のデバイスで正常に開くこと</li>
+            </ul>
+            <p>本アプリを使用するリスクはお客様が負担します。</p>
+            
+            <h2>6. 返金ポリシー</h2>
+            <p>すべての購入は Apple の App Store を通じて行われ、Apple の返金ポリシーに従います。購入に満足いただけない場合は、Apple の返金ポリシーに従って返金を申請できます：</p>
+            <ul>
+                <li><a href="https://reportaproblem.apple.com/">https://reportaproblem.apple.com/</a> にアクセス</li>
+                <li>Apple ID でサインイン</li>
+                <li>FileConverter 購入記録を選択</li>
+                <li>「問題を報告」をクリックし、「返金をリクエスト」を選択</li>
+            </ul>
+            <p>Apple は 48 時間以内に返金リクエストを処理します。</p>
+            
+            <h2>7. 知的財産権</h2>
+            <p>本アプリおよびそのすべての内容（コード、デザイン、アイコン、テキストを含むがこれらに限定されない）は RichTide Studio の財産であり、著作権法、商標法、および他の知的財産権法によって保護されます。</p>
+            
+            <h2>8. 規約の変更</h2>
+            <p>当社はいつでも本利用規約を変更する権利を留保します。変更後の規約は本ページに掲載され、「最終更新日」が更新されます。お客様が本アプリを継続使用することは、変更後の規約に同意したものとみなされます。</p>
+            
+            <h2>9. 準拠法</h2>
+            <p>本利用規約は中華人民共和国の法律に準拠します。本利用規約から生じるいかなる紛争も、管轄権のある人民法院に訴訟によって解決するために提出されます。</p>
+            
+            <h2>10. お問い合わせ</h2>
+            <div class="contact">
+                <p>本利用規約についてご質問がある場合は、次の方法でお問い合わせください：</p>
+                <p><strong>開発者</strong>：RichTide Studio</p>
+                <p><strong>メール</strong>：legal@richtide.app</p>
+                <p><strong>ウェブサイト</strong>：https://richtide.app</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showLanguage(lang) {
+            // 隐藏所有语言版本
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // 显示选中的语言版本
+            document.getElementById(lang).classList.add('active');
+            
+            // 更新页面语言
+            document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : (lang === 'ja' ? 'ja' : 'en');
+        }
+        
+        // 根据浏览器语言自动选择
+        (function() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('zh')) {
+                showLanguage('zh');
+            } else if (browserLang.startsWith('ja')) {
+                showLanguage('ja');
+            } else {
+                showLanguage('en');
+            }
+        })();
+    </script>
+</body>
+</html>
