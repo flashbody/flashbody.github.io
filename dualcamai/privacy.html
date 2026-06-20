@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — DualCam AI</title>
+<style>
+  :root {
+    --bg: #0a0a12; --card: #12121e; --accent: #3399ff;
+    --text: #e8e8f0; --muted: #888899; --border: #22223a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.7; }
+  .hero { background: linear-gradient(135deg, #0d1b3e 0%, #0a0a12 100%); padding: 60px 24px 40px; text-align: center; border-bottom: 1px solid var(--border); }
+  .hero .logo { font-size: 48px; margin-bottom: 12px; }
+  .hero h1 { font-size: 28px; font-weight: 700; color: #fff; }
+  .hero p { color: var(--muted); margin-top: 8px; font-size: 14px; }
+  .lang-bar { display: flex; justify-content: center; gap: 12px; padding: 16px; background: var(--card); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .lang-bar a { color: var(--accent); text-decoration: none; font-size: 14px; padding: 4px 12px; border-radius: 20px; border: 1px solid var(--accent); transition: all .2s; }
+  .lang-bar a:hover, .lang-bar a.active { background: var(--accent); color: #fff; }
+  .container { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+  h2 { font-size: 20px; font-weight: 700; color: var(--accent); margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 16px; font-weight: 600; color: #ccd; margin: 20px 0 8px; }
+  p, li { font-size: 15px; color: var(--text); margin-bottom: 10px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .highlight { background: var(--card); border-left: 3px solid var(--accent); padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+  .badge { display: inline-block; background: #1a3a1a; color: #4caf50; font-size: 12px; padding: 2px 10px; border-radius: 12px; margin-left: 8px; }
+  .contact-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-top: 32px; text-align: center; }
+  .contact-box a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 32px 24px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="logo">📷</div>
+  <h1>Privacy Policy</h1>
+  <p>DualCam AI · Last updated: June 20, 2026</p>
+</div>
+
+<div class="lang-bar">
+  <a href="privacy.html" class="active">English</a>
+  <a href="privacy-zh.html">简体中文</a>
+  <a href="privacy-ja.html">日本語</a>
+  <a href="privacy-de.html">Deutsch</a>
+</div>
+
+<div class="container">
+
+  <div class="highlight">
+    <strong>Summary:</strong> DualCam AI processes all data <strong>100% on-device</strong>. We do not collect, store, or transmit any personal data, photos, or videos to external servers.
+    <span class="badge">Privacy First</span>
+  </div>
+
+  <h2>1. Information We Collect</h2>
+  <p>DualCam AI is designed with privacy as a core principle. We collect <strong>no personal information</strong>.</p>
+  <h3>Data Processed On-Device Only</h3>
+  <ul>
+    <li><strong>Camera data:</strong> Front and rear camera feeds are processed locally in real-time for dual-camera capture. No images or video are transmitted externally.</li>
+    <li><strong>Microphone audio:</strong> Used solely for video recording and live captions (V3.0). Audio is processed on-device and never uploaded.</li>
+    <li><strong>Photos &amp; Videos:</strong> Saved directly to your device's photo library. We have no access to your library beyond what you explicitly share.</li>
+    <li><strong>Face data:</strong> Used by Vision framework for face tracking and portrait segmentation. Processed entirely on-device, never stored or transmitted.</li>
+    <li><strong>Speech recognition (V3.0):</strong> Uses Apple's on-device SFSpeechRecognizer. No audio leaves your device.</li>
+  </ul>
+
+  <h2>2. Purchase &amp; Payment Data</h2>
+  <p>All purchases are processed by <strong>Apple's App Store</strong> via StoreKit 2. DualCam AI never sees or stores your payment information. Apple's privacy policy governs all transaction data.</p>
+  <p>Purchase status (whether you have Pro access) is stored locally on your device via StoreKit's secure receipt validation.</p>
+
+  <h2>3. Analytics &amp; Crash Reporting</h2>
+  <p>DualCam AI does <strong>not</strong> include any third-party analytics SDKs (e.g., Firebase, Mixpanel, Amplitude). We do not track usage patterns, session lengths, or feature usage.</p>
+  <p>If you opt into Apple's App Store crash reporting, Apple may share anonymized crash logs with us to improve stability. This is controlled entirely by your iOS privacy settings.</p>
+
+  <h2>4. Permissions We Request</h2>
+  <ul>
+    <li><strong>Camera</strong> — Required for dual-camera capture. Used only while the app is in the foreground.</li>
+    <li><strong>Microphone</strong> — Required for video recording with audio and live captions. Used only during active recording.</li>
+    <li><strong>Photo Library (Add Only)</strong> — To save your captures. We request add-only permission; we do not read your existing photos.</li>
+    <li><strong>Speech Recognition (V3.0)</strong> — For live caption feature. On-device only, optional.</li>
+  </ul>
+  <p>You can revoke any permission at any time in <strong>Settings → Privacy</strong>. Revoking camera access will disable the app's core functionality.</p>
+
+  <h2>5. Data Sharing</h2>
+  <p>We do <strong>not</strong> share any data with third parties. DualCam AI has no backend servers, no cloud storage, and no advertising networks.</p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>DualCam AI does not knowingly collect data from children under 13. The app contains no age-restricted content and is suitable for all ages.</p>
+
+  <h2>7. Data Security</h2>
+  <p>Since all processing is on-device, your data security is protected by iOS's built-in security model, including app sandboxing, encrypted storage, and Face ID / Touch ID device protection.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy as the app evolves. Material changes will be communicated via App Store release notes. The "Last updated" date at the top reflects the most recent revision.</p>
+
+  <h2>9. Your Rights</h2>
+  <p>Since we collect no personal data, there is nothing to access, correct, or delete. If you have questions about data processed by Apple (purchases, crash reports), please refer to <a href="https://www.apple.com/privacy/" style="color:#3399ff">Apple's Privacy Policy</a>.</p>
+
+  <div class="contact-box">
+    <h3>Contact Us</h3>
+    <p>Questions about privacy? We're happy to help.</p>
+    <p><a href="mailto:flashbody@foxmail.com">flashbody@foxmail.com</a></p>
+  </div>
+
+</div>
+<footer>© 2026 DualCam AI · <a href="terms.html" style="color:#3399ff">Terms of Service</a> · <a href="support.html" style="color:#3399ff">Support</a></footer>
+</body>
+</html>

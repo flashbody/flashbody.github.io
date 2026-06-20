@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DualCam AI — Dual Camera · AI Enhanced</title>
+<meta name="description" content="DualCam AI — iOS dual front and rear camera app with AI enhancement. Free core features, Pro lifetime $15.99.">
+<style>
+  :root {
+    --bg: #0a0a12; --card: #12121e; --accent: #3399ff;
+    --text: #e8e8f0; --muted: #888899; --border: #22223a;
+    --grad1: #0d1b3e; --grad2: #0a0a12;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif; line-height: 1.6; }
+
+  /* Hero */
+  .hero { background: linear-gradient(160deg, var(--grad1) 0%, var(--bg) 60%); padding: 80px 24px 60px; text-align: center; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(51,153,255,.15) 0%, transparent 70%); }
+  .hero .badge { display: inline-block; background: rgba(51,153,255,.15); border: 1px solid rgba(51,153,255,.4); color: var(--accent); font-size: 13px; padding: 4px 14px; border-radius: 20px; margin-bottom: 20px; }
+  .hero .app-icon { font-size: 72px; margin-bottom: 16px; display: block; }
+  .hero h1 { font-size: clamp(32px, 6vw, 52px); font-weight: 800; color: #fff; letter-spacing: -1px; }
+  .hero h1 span { color: var(--accent); }
+  .hero p { color: var(--muted); font-size: 18px; margin: 16px auto 32px; max-width: 520px; }
+  .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary { background: var(--accent); color: #fff; padding: 14px 32px; border-radius: 14px; text-decoration: none; font-weight: 700; font-size: 16px; transition: opacity .2s; }
+  .btn-primary:hover { opacity: .85; }
+  .btn-secondary { background: rgba(255,255,255,.08); color: #fff; padding: 14px 32px; border-radius: 14px; text-decoration: none; font-weight: 600; font-size: 16px; border: 1px solid var(--border); transition: background .2s; }
+  .btn-secondary:hover { background: rgba(255,255,255,.14); }
+
+  /* Features */
+  section { max-width: 1000px; margin: 0 auto; padding: 64px 24px; }
+  .section-title { font-size: 28px; font-weight: 700; color: #fff; text-align: center; margin-bottom: 8px; }
+  .section-sub { color: var(--muted); text-align: center; margin-bottom: 40px; font-size: 16px; }
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .feature-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; transition: border-color .2s; }
+  .feature-card:hover { border-color: rgba(51,153,255,.4); }
+  .feature-icon { font-size: 32px; margin-bottom: 12px; }
+  .feature-card h3 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+  .feature-card p { color: var(--muted); font-size: 14px; }
+  .pro-badge { display: inline-block; background: rgba(255,200,50,.15); color: #ffc832; font-size: 11px; padding: 2px 8px; border-radius: 8px; margin-left: 6px; vertical-align: middle; }
+
+  /* Pricing */
+  .pricing-box { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 40px; text-align: center; max-width: 440px; margin: 0 auto; }
+  .pricing-box .price { font-size: 52px; font-weight: 800; color: #fff; }
+  .pricing-box .price span { font-size: 22px; color: var(--muted); font-weight: 400; }
+  .pricing-box p { color: var(--muted); margin: 8px 0 24px; }
+  .pricing-list { text-align: left; list-style: none; margin-bottom: 28px; }
+  .pricing-list li { padding: 6px 0; color: var(--text); font-size: 15px; }
+  .pricing-list li::before { content: '✓ '; color: var(--accent); font-weight: 700; }
+  .trial-note { background: rgba(51,153,255,.1); border: 1px solid rgba(51,153,255,.25); border-radius: 10px; padding: 12px 16px; color: var(--accent); font-size: 14px; margin-top: 16px; }
+
+  /* Versions */
+  .versions { display: flex; flex-direction: column; gap: 12px; }
+  .version-row { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; }
+  .v-badge { background: rgba(51,153,255,.2); color: var(--accent); font-weight: 700; font-size: 14px; padding: 4px 12px; border-radius: 8px; white-space: nowrap; }
+  .v-badge.done { background: rgba(76,175,80,.2); color: #4caf50; }
+  .v-info h4 { color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .v-info p { color: var(--muted); font-size: 13px; }
+
+  /* Footer */
+  footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--accent); text-decoration: none; margin: 0 8px; }
+  footer a:hover { text-decoration: underline; }
+
+  /* Lang switcher */
+  .lang-bar { display: flex; justify-content: center; gap: 8px; padding: 12px; background: var(--card); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .lang-bar a { color: var(--muted); text-decoration: none; font-size: 13px; padding: 3px 10px; border-radius: 16px; border: 1px solid var(--border); transition: all .2s; }
+  .lang-bar a:hover { color: #fff; border-color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="lang-bar">
+  <a href="#" onclick="return false">🇺🇸 English</a>
+  <a href="#" onclick="return false">🇨🇳 简体中文</a>
+  <a href="#" onclick="return false">🇯🇵 日本語</a>
+  <a href="#" onclick="return false">🇩🇪 Deutsch</a>
+</div>
+
+<div class="hero">
+  <div class="badge">📱 iOS 15+ · iPhone 12+</div>
+  <span class="app-icon">📷</span>
+  <h1>DualCam <span>AI</span></h1>
+  <p>Dual front &amp; rear camera capture with real-time AI enhancement. Free core features, Pro lifetime unlock.</p>
+  <div class="hero-btns">
+    <a href="#" class="btn-primary">Download on App Store</a>
+    <a href="support.html" class="btn-secondary">Support</a>
+  </div>
+</div>
+
+<!-- Features -->
+<section>
+  <h2 class="section-title">Everything You Need</h2>
+  <p class="section-sub">Free core features · Pro AI unlocks everything</p>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">📸</div>
+      <h3>Simultaneous Dual Camera</h3>
+      <p>True parallel front + rear capture via AVCaptureMultiCamSession. Frame-synchronized, no lag.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎨</div>
+      <h3>AI Color Unification</h3>
+      <p>Automatically matches white balance, exposure, and color temperature between both cameras.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🌙</div>
+      <h3>Dual-Path Noise Reduction</h3>
+      <p>Independent AI denoising for front and rear — sharp portraits, detailed scenes, even in low light.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎭</div>
+      <h3>8 Layouts + Free Drag<span class="pro-badge">PRO</span></h3>
+      <p>Split, PiP, corner overlays. Drag to reposition, pinch to resize, double-tap to swap.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✂️</div>
+      <h3>AI Portrait Fusion<span class="pro-badge">PRO</span></h3>
+      <p>Hair-level person segmentation. Float yourself over any scene with edge feathering and shadow.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎭</div>
+      <h3>AI Avatar Styles<span class="pro-badge">PRO</span></h3>
+      <p>6 real-time styles: Cute Q, Anime, Pixel, Sketch, Clay 3D, Watercolor.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎬</div>
+      <h3>4K 60fps Recording<span class="pro-badge">PRO</span></h3>
+      <p>HEVC encoding at up to 4K 60fps. Dual-track output saves front and rear as independent files.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💬</div>
+      <h3>Live Captions<span class="pro-badge">PRO</span></h3>
+      <p>Real-time speech-to-text overlay in 7 languages. On-device, private.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✨</div>
+      <h3>Smart Stickers + Effects<span class="pro-badge">PRO</span></h3>
+      <p>Scene-aware stickers, 5 transition types, and 0.25×–4× speed control.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section style="padding-top: 0;">
+  <h2 class="section-title">Simple Pricing</h2>
+  <p class="section-sub">One-time purchase · No subscription · Lifetime updates</p>
+  <div class="pricing-box">
+    <div class="price">$15.99 <span>once</span></div>
+    <p>Lifetime Pro Access</p>
+    <ul class="pricing-list">
+      <li>4K &amp; 60fps recording</li>
+      <li>AI Portrait Fusion (hair-level)</li>
+      <li>AI Avatar (6 styles)</li>
+      <li>8 AI Smart Templates</li>
+      <li>Live Captions (7 languages)</li>
+      <li>Smart Stickers + Speed effects</li>
+      <li>Dual-track video output</li>
+      <li>No watermark export</li>
+      <li>All future Pro features included</li>
+    </ul>
+    <a href="#" class="btn-primary" style="display:block;text-align:center;">Get on App Store</a>
+    <div class="trial-note">🎁 3-day free trial · No payment required</div>
+  </div>
+</section>
+
+<!-- Version History -->
+<section style="padding-top: 0;">
+  <h2 class="section-title">Version History</h2>
+  <p class="section-sub">BUILD SUCCEEDED · TEST 30/30 PASS</p>
+  <div class="versions">
+    <div class="version-row">
+      <span class="v-badge done">V3.0</span>
+      <div class="v-info">
+        <h4>Creative Edition</h4>
+        <p>4-language i18n (en/zh/ja/de) · Live Captions · Smart Stickers · Speed &amp; Transition Effects</p>
+      </div>
+    </div>
+    <div class="version-row">
+      <span class="v-badge done">V2.0</span>
+      <div class="v-info">
+        <h4>AI Complete Edition</h4>
+        <p>4K/60fps · Dual-track output · Portrait Fusion · Avatar Styles · 8 AI Templates · Watermark system</p>
+      </div>
+    </div>
+    <div class="version-row">
+      <span class="v-badge done">V1.0</span>
+      <div class="v-info">
+        <h4>Core Release</h4>
+        <p>AVCaptureMultiCamSession · Metal rendering · AI color unification · 8 layouts · StoreKit 2 IAP</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 DualCam AI · flashbody@foxmail.com</p>
+  <p style="margin-top:10px;">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="support.html">Support</a>
+    <a href="privacy-zh.html">隐私政策</a>
+    <a href="privacy-ja.html">プライバシー</a>
+    <a href="privacy-de.html">Datenschutz</a>
+  </p>
+</footer>
+
+</body>
+</html>

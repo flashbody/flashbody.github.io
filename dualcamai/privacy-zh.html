@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 — DualCam AI</title>
+<style>
+  :root { --bg:#0a0a12;--card:#12121e;--accent:#3399ff;--text:#e8e8f0;--muted:#888899;--border:#22223a; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB',sans-serif;line-height:1.8;}
+  .hero{background:linear-gradient(135deg,#0d1b3e 0%,#0a0a12 100%);padding:60px 24px 40px;text-align:center;border-bottom:1px solid var(--border);}
+  .hero .logo{font-size:48px;margin-bottom:12px;}
+  .hero h1{font-size:28px;font-weight:700;color:#fff;}
+  .hero p{color:var(--muted);margin-top:8px;font-size:14px;}
+  .lang-bar{display:flex;justify-content:center;gap:12px;padding:16px;background:var(--card);border-bottom:1px solid var(--border);flex-wrap:wrap;}
+  .lang-bar a{color:var(--accent);text-decoration:none;font-size:14px;padding:4px 12px;border-radius:20px;border:1px solid var(--accent);transition:all .2s;}
+  .lang-bar a:hover,.lang-bar a.active{background:var(--accent);color:#fff;}
+  .container{max-width:760px;margin:0 auto;padding:40px 24px 80px;}
+  h2{font-size:20px;font-weight:700;color:var(--accent);margin:36px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border);}
+  h3{font-size:16px;font-weight:600;color:#ccd;margin:20px 0 8px;}
+  p,li{font-size:15px;color:var(--text);margin-bottom:10px;}
+  ul{padding-left:20px;}li{margin-bottom:6px;}
+  .highlight{background:var(--card);border-left:3px solid var(--accent);padding:14px 18px;border-radius:0 8px 8px 0;margin:16px 0;}
+  .badge{display:inline-block;background:#1a3a1a;color:#4caf50;font-size:12px;padding:2px 10px;border-radius:12px;margin-left:8px;}
+  .contact-box{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-top:32px;text-align:center;}
+  .contact-box a{color:var(--accent);text-decoration:none;font-weight:600;}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:32px 24px;border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="logo">📷</div>
+  <h1>隐私政策</h1>
+  <p>DualCam AI · 最后更新：2026年6月20日</p>
+</div>
+<div class="lang-bar">
+  <a href="privacy.html">English</a>
+  <a href="privacy-zh.html" class="active">简体中文</a>
+  <a href="privacy-ja.html">日本語</a>
+  <a href="privacy-de.html">Deutsch</a>
+</div>
+<div class="container">
+
+  <div class="highlight">
+    <strong>核心承诺：</strong>DualCam AI 的所有数据处理均在您的设备本地完成，<strong>100% 本地运算</strong>。我们不收集、不存储、不传输任何个人数据、照片或视频至外部服务器。
+    <span class="badge">隐私优先</span>
+  </div>
+
+  <h2>1. 我们收集的信息</h2>
+  <p>DualCam AI 以隐私保护为核心设计原则，<strong>不收集任何个人信息</strong>。</p>
+  <h3>仅在设备本地处理的数据</h3>
+  <ul>
+    <li><strong>摄像头数据：</strong>前后摄像头画面仅用于本地实时双摄采集处理，不向外部传输任何图像或视频。</li>
+    <li><strong>麦克风音频：</strong>仅用于视频录制和实时字幕（V3.0），在设备本地处理，从不上传。</li>
+    <li><strong>照片与视频：</strong>直接保存至您设备的相册，我们无法访问您的相册内容。</li>
+    <li><strong>人脸数据：</strong>通过 Vision 框架进行人脸追踪和人像分割，完全在设备本地处理，不存储、不传输。</li>
+    <li><strong>语音识别（V3.0）：</strong>使用苹果 SFSpeechRecognizer 本地识别，音频不离开您的设备。</li>
+  </ul>
+
+  <h2>2. 购买与支付数据</h2>
+  <p>所有购买均通过 <strong>Apple App Store</strong> 的 StoreKit 2 处理。DualCam AI 从不接触或存储您的支付信息。所有交易数据受 Apple 隐私政策约束。</p>
+  <p>您的 Pro 购买状态通过 StoreKit 安全收据验证，仅存储在您的设备本地。</p>
+
+  <h2>3. 数据分析与崩溃报告</h2>
+  <p>DualCam AI <strong>不集成</strong>任何第三方数据分析 SDK（如 Firebase、友盟等），不追踪您的使用行为、会话时长或功能使用情况。</p>
+  <p>如您在 iOS 设置中启用了 App Store 崩溃报告，Apple 可能会向我们共享匿名化的崩溃日志，以帮助改善应用稳定性。</p>
+
+  <h2>4. 我们申请的权限</h2>
+  <ul>
+    <li><strong>相机</strong>——双摄拍摄核心功能所必需，仅在应用前台使用时启用。</li>
+    <li><strong>麦克风</strong>——视频录制和实时字幕所必需，仅在主动录制时使用。</li>
+    <li><strong>相册（仅写入）</strong>——保存您的拍摄成果，申请"仅添加"权限，不读取您的现有照片。</li>
+    <li><strong>语音识别（V3.0）</strong>——实时字幕功能，本地处理，可选启用。</li>
+  </ul>
+  <p>您可随时在 <strong>设置 → 隐私与安全性</strong> 中撤销任何权限。撤销相机权限将导致应用核心功能无法使用。</p>
+
+  <h2>5. 数据共享</h2>
+  <p>我们<strong>不与任何第三方共享数据</strong>。DualCam AI 没有后端服务器、云存储或广告网络。</p>
+
+  <h2>6. 儿童隐私</h2>
+  <p>DualCam AI 不针对 13 岁以下儿童收集任何数据，应用内容适合所有年龄段用户。</p>
+
+  <h2>7. 数据安全</h2>
+  <p>由于所有处理均在设备本地进行，您的数据安全由 iOS 内置安全机制保障，包括应用沙盒、加密存储及 Face ID / Touch ID 设备保护。</p>
+
+  <h2>8. 政策变更</h2>
+  <p>随着应用功能迭代，我们可能更新本隐私政策。重大变更将通过 App Store 更新说明通知您，页面顶部的"最后更新"日期反映最新修订时间。</p>
+
+  <h2>9. 您的权利</h2>
+  <p>由于我们不收集任何个人数据，无需提供数据访问、修改或删除服务。如有关于 Apple 处理数据（购买记录、崩溃报告）的问题，请参阅 <a href="https://www.apple.com/cn/privacy/" style="color:#3399ff">Apple 隐私政策</a>。</p>
+
+  <div class="contact-box">
+    <h3>联系我们</h3>
+    <p>如有任何隐私相关问题，欢迎随时联系。</p>
+    <p><a href="mailto:flashbody@foxmail.com">flashbody@foxmail.com</a></p>
+  </div>
+
+</div>
+<footer>© 2026 DualCam AI · <a href="terms-zh.html" style="color:#3399ff">服务条款</a> · <a href="support.html" style="color:#3399ff">技术支持</a></footer>
+</body>
+</html>
